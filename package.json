@@ -4,30 +4,29 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-	  "build": "rbxtsc",
-	  "watch": "rbxtsc -w",
-	  "postinstall": "rbxtsc"
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"postinstall": "rbxtsc"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-	  "@rbxts/compiler-types": "^2.3.0-types.2",
-	  "@rbxts/types": "^1.0.841",
-	  "@typescript-eslint/eslint-plugin": "^7.18.0",
-	  "@typescript-eslint/parser": "^7.18.0",
-	  "eslint": "^8.57.1",
-	  "eslint-config-prettier": "^9.1.0",
-	  "eslint-plugin-deprecation": "^3.0.0",
-	  "eslint-plugin-prettier": "^5.2.3",
-	  "eslint-plugin-roblox-ts": "^0.0.36",
-	  "eslint-plugin-unused-imports": "^4.1.4",
-	  "prettier": "^3.4.2",
-	  "roblox-ts": "^3.0.0",
-	  "typescript": "^5.7.3"
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"eslint": "^8.57.1",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-deprecation": "^3.0.0",
+		"eslint-plugin-prettier": "^5.2.3",
+		"eslint-plugin-roblox-ts": "^0.0.36",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"prettier": "^3.4.2",
+		"roblox-ts": "^3.0.0",
+		"typescript": "^5.7.3"
 	},
 	"dependencies": {
-	  "@rbxts/services": "^1.5.5"
+		"@rbxts/compiler-types": "^2.3.0-types.2",
+		"@rbxts/types": "^1.0.841",
+		"@rbxts/services": "^1.5.5"
 	}
-  }
-  
+}
