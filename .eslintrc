@@ -1,0 +1,113 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"jsx": true,
+		"useJSXTextNode": true,
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"ignorePatterns": [
+		"/out"
+	],
+	"plugins": [
+		"@typescript-eslint",
+		"roblox-ts",
+		"prettier",
+		"unused-imports",
+		"deprecation"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:roblox-ts/recommended",
+		"plugin:prettier/recommended"
+	],
+	"rules": {
+		"deprecation/deprecation": "warn",
+		"roblox-ts/lua-truthiness": "off",
+		"no-constant-condition": "off",
+		"unused-imports/no-unused-imports": "warn",
+		// "unused-imports/no-unused-vars": [
+		// 	"warn",
+		// 	{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		// ],
+		"prettier/prettier": [
+			"warn",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/quotes": [
+			"warn",
+			"double"
+		],
+		"@typescript-eslint/naming-convention": [
+			"warn",
+			{
+				"selector": "default",
+				"format": [
+					"PascalCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "typeLike",
+				"format": [
+					"PascalCase"
+				]
+			},
+			{
+				"selector": "objectLiteralProperty",
+				"format": [
+					"PascalCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "typeProperty",
+				"format": [
+					"PascalCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "enumMember",
+				"format": [
+					"UPPER_CASE",
+					"PascalCase"
+				]
+			}
+		],
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/consistent-type-definitions": [
+			"warn",
+			"interface"
+		],
+		"@typescript-eslint/no-inferrable-types": [
+			"warn",
+			{
+				"ignoreParameters": true,
+				"ignoreProperties": true
+			}
+		],
+		"@typescript-eslint/prefer-optional-chain": "warn",
+		"@typescript-eslint/member-delimiter-style": "off",
+		// "@typescript-eslint/explicit-function-return-type": ["warn", { "allowExpressions": true }],
+		"sort-imports": [
+			"warn",
+			{
+				"ignoreCase": true,
+				"ignoreDeclarationSort": true,
+				"ignoreMemberSort": false,
+				"memberSyntaxSortOrder": [
+					"none",
+					"all",
+					"multiple",
+					"single"
+				]
+			}
+		]
+	}
+}
